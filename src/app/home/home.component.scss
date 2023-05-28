@@ -1,0 +1,111 @@
+h5 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    color: #F2753B;
+}
+
+.card {
+    background-color: white;
+    border: none;
+    max-height: 200px !important;
+    margin-top: 12px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    cursor: pointer;
+}
+
+table {
+    margin: 9px;
+
+    th {
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: bold;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+        color: #000000;
+        opacity: 30%;
+    }
+
+    td {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: bold;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+        color: #F2753B;
+
+    }
+}
+
+.playerInfo {
+    margin-top: 23px;
+}
+
+.container {
+    background-image: url("../../assets/pictures/peakpx.jpg");
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100vh;
+    max-height: 100vh !important;
+    overflow-x: hidden;
+
+}
+
+input::placeholder {
+    color: #F2753B;
+
+}
+
+.searchInput {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    color: white;
+    border: 0;
+    outline: 0;
+    border-radius: 1em;
+    box-sizing: border-box;
+    margin-left: 15px;
+    height: 55px;
+
+
+
+}
+
+input[type="text"],
+textarea {
+
+    background-color: #00000045;
+
+}
+
+.modal {
+    display: -webkit-inline-box;
+    background: rgb(73 38 21 / 72%);
+}
+
+@media (min-width: 90px) {
+
+    .modal-lg,
+    .modal-xl {
+        --bs-modal-width: 200vh;
+    }
+}
+
+canvas {
+    width: 20vh !important;
+    height: 16vh !important;
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    right: -21vh;
+}

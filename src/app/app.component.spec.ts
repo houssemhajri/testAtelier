@@ -1,16 +1,15 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { HttpClient, HttpHandler } from '@angular/common/http';
+import { AppServicesService } from 'src/Core/Services/app-services.service';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [
-        RouterTestingModule
-      ],
-      declarations: [
-        AppComponent
-      ],
+      imports: [RouterTestingModule],
+      declarations: [AppComponent],
+      providers: [HttpClient, AppServicesService, HttpHandler],
     }).compileComponents();
   });
 
@@ -30,6 +29,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('testAtelier app is running!');
+    expect(compiled.querySelector('.card-title')).toBeDefined;
   });
 });

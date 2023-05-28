@@ -1,0 +1,63 @@
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700;900&display=swap" rel="stylesheet">
+
+<div class="container">
+    <div class="row col-lg-4 col-md-8 col-sm-12">
+        <input type="text" class="searchInput mt-5 ml-2" (change)="filterTatble($event)" (keyup)="filterTatble($event)"
+            [(value)]="searchInput" placeholder="Rechercher un joueur">
+    </div>
+    <div class="row col-lg-4 col-md-8 col-sm-12">
+        <div class="col-12" *ngFor="let player of searchResult">
+            <div class="row">
+
+                <div class="card m-3" (click)="showPopDetails(player)">
+                    <div class="card-body row">
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                            <img [src]="player.picture" height="150px">
+                        </div>
+                        <div class="col-lg-8  col-md-8 col-sm-8 playerInfo">
+                            <div class="row">
+                                <h5 class="card-title">{{player.firstname + " " + player.lastname}}</h5>
+                            </div>
+                            <div class="row">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>RANK</th>
+                                            <th>POINTS</th>
+                                            <th>COUNTRY</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>{{player.data.rank}}</td>
+                                            <td>{{player.data.points}}</td>
+                                            <td>{{player.country.code}}</td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <canvas [attr.id]="player.firstname">{{player.stat}}</canvas>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+
+<div *ngIf="showDetails" class="modal  bd-example-modal-xlg">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <app-details [player]="selectedPlayer" (output)="closeModal()"></app-details>
+        </div>
+    </div>
+</div>

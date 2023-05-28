@@ -1,0 +1,102 @@
+.containerDetails {
+    width: 120vh;
+    max-width: 100%;
+    min-height: 80vh;
+    max-height: 100vh !important;
+    overflow-x: hidden;
+
+}
+
+.imgPlayer {
+    max-width: 150%;
+    height: 84vh;
+    position: absolute;
+    left: -15vh;
+    bottom: 0px;
+    filter: drop-shadow(30px 10px 4px rgba(149, 157, 165, 0.2));
+}
+
+.titleFirstName {
+    font-family: "Montserrat";
+    font-style: oblique;
+    font-size: 7vh;
+    font-weight: bolder;
+    /* size: 169vh; */
+    font-weight: 168vh;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format("woff2");
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    color: #F2753B;
+    margin-bottom: -5vh;
+    margin-top: 5vh;
+}
+
+.titleLastName {
+    font-family: "Montserrat";
+    font-style: oblique;
+    font-size: 11vh;
+    font-weight: bolder;
+    /* size: 169vh; */
+    font-weight: 168vh;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format("woff2");
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    color: #F2753B;
+}
+
+.imgDiv {
+    overflow: hidden;
+}
+
+.imgCountry {
+    max-width: 57%;
+    height: 14vh;
+    margin-top: 5vh;
+    margin-left: 8vh;
+}
+
+.codeCountry {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6vh;
+    font-display: swap;
+    margin-top: -4vh;
+    color: #000000;
+    opacity: 30%;
+    align-items: center;
+}
+
+table {
+    margin: 16vh;
+
+    th {
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: bold;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+        color: #000000;
+        opacity: 30%;
+    }
+
+    td {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: bold;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+        color: #F2753B;
+
+    }
+}
+
+.imgClose {
+    height: 6vh;
+    position: absolute;
+    left: 48%;
+    top: -4%;
+    cursor: pointer;
+}

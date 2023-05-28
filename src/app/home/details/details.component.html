@@ -1,0 +1,65 @@
+<div class="containerDetails">
+    <img src="../../../assets/pictures/close.png" class="imgClose" (click)="closeModal()">
+
+    <div class=" row">
+        <div class="col-lg-2 col-md-2 col-sm-2 imgDiv">
+            <img [src]="player.picture" class="imgPlayer">
+        </div>
+        <div class="col-lg-10 col-md-10 col-sm-10">
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-8">
+                    <div class="titleFirstName col-12">{{ player.firstname}}</div>
+                    <div class="titleLastName col-12">{{ player.lastname}}</div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="col-12">
+                        <img [src]="player.country.picture" class="imgCountry">
+                    </div>
+                    <div class="col-12 codeCountry text-center">
+                        {{player.country.code}}
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <table class="ml-5">
+                    <thead>
+                        <tr>
+                            <th>RANK</th>
+                            <th>POINTS</th>
+                            <th>COUNTRY</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>{{player.data.rank}}</td>
+                            <td>{{player.data.points}}</td>
+                            <td>{{player.country.code}}</td>
+
+                        </tr>
+                        <tr>
+                            <th>BIRTHDAY</th>
+                            <th>AGE</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>{{player.data.age}}</td>
+
+                        </tr>
+                        <tr>
+                            <th>WEIGHT</th>
+                            <th>HEIGHT</th>
+                        </tr>
+                        <tr>
+                            <td>{{player.data.weight}} kg</td>
+                            <td>{{player.data.height}} cm</td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>
